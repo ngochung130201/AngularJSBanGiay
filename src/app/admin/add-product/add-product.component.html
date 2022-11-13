@@ -1,0 +1,42 @@
+<div class="flex">
+    <app-sidebar-admin></app-sidebar-admin>
+<div class="form">
+    <h4>Tạo mới sản phẩm</h4>
+    <form [formGroup]="productFormCreate" action="" method="post" (ngSubmit)="OnCreate()">
+        <label for="" >Tên sản phẩm</label>
+        <input class="form-control"  type="text"  formControlName="name" >
+        <label for="" >Nội dung</label>
+      
+        <editor formControlName="description"
+  [init]="{
+    height: 500,
+    plugins: [
+       'a11ychecker','advlist','advcode','advtable','autolink','checklist','export',
+      'lists','link','image','charmap','preview','anchor','searchreplace','visualblocks',
+      'powerpaste','fullscreen','formatpainter','insertdatetime','media','table','help','wordcount'
+    ],
+    toolbar:
+     'undo redo | casechange blocks | bold italic backcolor | \
+     alignleft aligncenter alignright alignjustify | \
+     bullist numlist checklist outdent indent | removeformat | a11ycheck code table help'
+  }"
+  initialValue="Welcome to TinyMCE Angular"
+></editor>
+        <label for="" >Nội dung ngắn</label>
+        <input class="form-control" type="text" formControlName="content"><br>
+       
+        <label for="" >Hình ảnh</label>
+        <input class="form-control" type="text" formControlName="image" ><br>
+        <label for="" >Gallery</label>
+        <input class="form-control" type="text" formControlName="gallery"><br>
+        <label for="" >Giá sản phẩm</label>
+        <input class="form-control"  type="text" required formControlName="price"><br>
+        <label for="">Giá Giảm</label>
+        <input class="form-control" id="price" required  type="text" formControlName="priceSale">
+   
+        <button  type="submit" class="btn btn-primary mt-2">Tạo mới</button>
+     
+    </form>
+</div>
+
+</div>

@@ -1,0 +1,39 @@
+<header>
+    <!-- nav -->
+    <nav>
+        <div class="nav__header-one">
+          <div class="header__one-list">
+            <ul class="one-list_item">
+                <li *ngFor="let item of menu2">
+                    <a href="#home" routerLink="{{item.link}}">{{item.name}}</a>
+                </li>
+              
+               
+            </ul>
+            <div class="one-list-item">
+                
+                <a href="" *ngFor="let item of menuAuth"  class="one-list-auth"> {{item.name}} </a> 
+           
+            </div>
+          </div>
+        </div>
+        <div class="nav_header-two">
+           <div class="header-two_menu">
+           <div class="">
+            <img src="../../assets/image/logo.svg" alt="" srcset="">
+           </div>
+            <div class="two_menu-list">
+                <ul>
+                    <li *ngFor="let item of menuArray"><a routerLink="{{item.link}}">{{item.name}}</a></li>
+                </ul>
+              
+            </div>
+           </div>
+           <div class="header-two_search">
+            <mat-icon  svgIcon="search"></mat-icon>
+            <mat-icon  svgIcon="search"></mat-icon>
+           </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+</header>

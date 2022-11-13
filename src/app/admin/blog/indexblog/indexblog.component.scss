@@ -1,0 +1,67 @@
+@import '../../../../assets/scss/style.scss';
+.admin_list-product {
+
+}
+@mixin btn {
+  color: #fff;
+      padding: 0.5rem 2rem;
+      border-radius: 5px;
+      border: none;
+  
+}
+.table {
+  padding: 0 2rem 2rem 2rem;
+  flex:1 1 auto;
+  height: 100vh;
+  
+    .btn_create {
+      background-color: #0069D9;
+      @include btn()
+      
+    }
+  
+}
+.table_title {
+   h2 {
+    font-size: 18px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+   }
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1rem;
+  
+
+    
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .flex {
+   display: flex;
+   width: 100%;
+   flex: 1 1  ;
+   justify-content: space-between;
+  }
+  .btn_dele {
+    background-color: #C82333;
+   @include btn();
+
+    margin-left: 0.5rem;
+    cursor:pointer;
+
+  }
+  .btn_update {
+    @include btn();
+    background-color: #138496;
+  }

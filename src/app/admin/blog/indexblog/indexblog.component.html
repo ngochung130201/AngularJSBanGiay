@@ -1,0 +1,48 @@
+
+<div class="">
+    <div class="admin_list-product flex">
+       
+      <app-sidebar-admin></app-sidebar-admin>
+  
+  <div class="table">
+    <div class="table_title">
+      <h2>Giới thiệu</h2>
+    <a class="btn_create" routerLink="/admin/gioi-thieu/create">
+      Tạo mới
+  </a>
+    </div>
+    <table>
+     
+      <tr>
+        <th>
+          <input type="checkbox" name="" id="">
+        </th>
+        <th>STT</th>
+        <th>Tên </th>
+        <th>Hình ảnh</th>
+        <th>Chức năng</th>
+      </tr>
+      <tr *ngFor="let blog of blogs;let i =index ">
+        <th>
+          <input type="checkbox" name="" id="">
+        </th>
+        <td>{{i +1 }}</td>
+        <td>{{blog.name}}</td>
+        <td>
+            <img style="width: 100px" [src]="blog.image" alt="">
+        </td>
+        
+        <td>
+            <button class="btn_update" >
+                <a routerLink="/admin/san-pham/edit/{{blog.id}}">Cập nhật</a>
+            </button>
+            <button  class="btn_dele" (click)="OnDelete(blog.id)">Xóa</button>
+        </td>
+    
+      </tr>
+   
+    </table>
+    <app-pagination></app-pagination>
+  </div>
+  </div>
+  </div>

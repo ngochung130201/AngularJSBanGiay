@@ -1,0 +1,19 @@
+<app-header>
+</app-header>
+
+<div class="container">
+    <div class="blog">
+     
+     <div class="blog__container">
+         <div class="blog__list" *ngFor="let blog of blogAll">
+             <a routerLink="/tin-tuc/{{blog.id}}" class="blog__item">
+                 <img [src]="blog.image">
+                 <span class="blog_title">{{blog.name}}</span>
+                 <p>{{blog.content}}</p>
+             </a>
+         </div>
+      
+     </div>
+    </div>
+    </div>
+<app-footer></app-footer>

@@ -1,0 +1,84 @@
+<app-header></app-header>
+<div class="detail" *ngFor="let item of productDetail">
+   <div class="detail_img">
+    <img [src]="item.image" alt="">
+   </div>
+   <div class="detail_body">
+        <span>
+            {{item.name}}
+        </span>
+       <div class="">
+        <span class="price_sale">
+            {{item.priceSale}}
+        </span>
+        <span class="price">
+            {{item.price}}
+        </span>
+       </div>
+       <div class="detail_btn">
+            <div class="btn detail_cart">
+                <a (click)="OnCart()" href=""> THÊM VÀO GIỎ HÀNG</a>
+            </div>
+            <div class="btn detail_start">
+                <a (click)="OnCartStart()" href="">MUA NGAY</a>
+            </div>
+       </div>
+       <div class="des" >
+        <div [innerHTML]="item.description"></div>
+       </div>
+   </div>
+</div>
+<div class="products">
+    <div class="" style="font-size:25px ; font-weight: 700;">Sản phẩm liên quan</div>
+    <div class="product">
+    <a href="" class="product__item">
+     
+            <img src="https://timan.vn/Thumb.ashx?s=300&file=/UploadImages/shops/dep-nam/DK12/Avatar/dep-kep-da-nam-dk12-avatar.jpg" alt="">
+            <span>Giay Da Thể Thao</span>
+            <span>
+                320.000d
+
+            </span>
+            <span>500.000d</span>
+        
+    </a>
+    <a href="" class="product__item">
+     
+        <img src="https://timan.vn/Thumb.ashx?s=300&file=/UploadImages/shops/dep-nam/DK12/Avatar/dep-kep-da-nam-dk12-avatar.jpg" alt="">
+        <span>Giay Da Thể Thao</span>
+        <span>
+            320.000d
+
+        </span>
+        <span>500.000d</span>
+    
+</a>
+<a href="" class="product__item">
+     
+    <img src="https://timan.vn/Thumb.ashx?s=300&file=/UploadImages/shops/dep-nam/DK12/Avatar/dep-kep-da-nam-dk12-avatar.jpg" alt="">
+    <span>Giay Da Thể Thao</span>
+    <span>
+        320.000d
+
+    </span>
+    <span>500.000d</span>
+
+</a>
+<a href="" class="product__item">
+     
+    <img src="https://timan.vn/Thumb.ashx?s=300&file=/UploadImages/shops/dep-nam/DK12/Avatar/dep-kep-da-nam-dk12-avatar.jpg" alt="">
+    <span>Giay Da Thể Thao</span>
+    <span>
+        320.000d
+
+    </span>
+    <span>500.000d</span>
+
+</a>
+
+
+</div>
+<div class="center">
+    <a href="">Xem Thêm</a>
+</div>
+<app-footer></app-footer>

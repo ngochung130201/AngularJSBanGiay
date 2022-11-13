@@ -1,0 +1,12 @@
+<div class="category">
+    <h3>Danh mục sản phẩm</h3>
+     <div  *ngIf="categoryListAll && categoryListAll.length > 0 " class="category__body">
+        <div *ngFor="let category of categoryListAll;let i = index" class="category_item">
+           <div  class="category_silder" [ngClass]="{'image-active' : selectIndex=== i}" >
+            <img  [src]="category.image" alt="">
+            <span>{{category.name}}</span>
+           </div>
+        </div>
+     </div>
+</div>
+

@@ -1,0 +1,54 @@
+@import '../../assets/scss/style.scss';
+@import '../product/product.component.scss';
+.detail {
+    padding: $p0-4 $p-6;
+    margin-top: 5rem;
+    display: flex;
+    gap: 2rem;
+   
+
+    .detail_img {
+        img {
+           width: 500px;
+           height: 500px;
+        }
+    }
+    .detail_body {
+        span {
+            font-size:20px ;
+            font-weight: 500;
+            
+         
+        }
+       
+    }
+}
+.price_sale {
+    text-decoration: line-through;
+}
+.price {
+    color: red;
+}
+.detail_btn {
+    display: flex;
+    gap: 1rem;
+}
+.btn {
+    padding: 10px 20px;
+}
+.detail_cart {
+    background-color: #fecd08;
+   
+
+}
+.detail_start {
+    background-color: #fb6e2e;
+    color: #fff;
+}
+.des {
+    width: 500px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    word-spacing: 4px;
+    margin-top: 0.5rem;
+}

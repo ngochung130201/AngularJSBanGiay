@@ -1,0 +1,52 @@
+
+@import '../../assets/scss/style.scss';
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #ffff;
+ 
+}
+.nav__header-one {
+  height: 32px;
+  width: 100%;
+  background-color: #EFF0F6;
+  padding: $p0-4 $p-6;
+
+    .header__one-list {
+
+      @include flex(space-between,center);
+      
+    }
+}
+.one-list_item {
+    list-style-type: none;
+    @include flex(center,center);
+    gap: 1.75rem;
+    li {
+      a {
+        text-decoration: none;
+        font-size: 12px;
+    
+      }
+    }
+}
+.one-list-auth {
+  text-decoration: none;
+  font-size: 12px;
+}
+.nav_header-two {
+  padding: $p0-4 $p-6;
+  @include flex(space-between,center);
+}
+// header_two4
+.header-two_menu {
+  @include flex(flex-start,center);
+  gap: 3rem;
+}
+.two_menu-list ul {
+  @include flex(flex-start,center);
+  list-style-type: none;
+  gap: 2rem;
+}

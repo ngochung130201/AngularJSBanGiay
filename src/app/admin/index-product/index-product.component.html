@@ -1,0 +1,55 @@
+
+<div class="">
+
+
+  <div class="admin_list-product flex">
+    
+    <app-sidebar-admin></app-sidebar-admin>
+
+<div class="table">
+  <div class="table_title">
+    <h2>Danh sách sản phẩm</h2>
+  <a class="btn_create" routerLink="/admin/san-pham/create">
+    Tạo mới
+</a>
+  </div>
+  <table>
+   
+    <tr>
+      <th>
+        <input type="checkbox" name="" id="">
+      </th>
+      <th>STT</th>
+      <th>Tên sản phẩm</th>
+      <th>Hình ảnh</th>
+      <th>Giá gốc</th>
+      <th>Giá giảm</th>
+      <th>Ngày tạo</th>
+      <th>Chức năng</th>
+    </tr>
+    <tr *ngFor="let product of productList;let i =index ">
+      <th>
+        <input type="checkbox" name="" id="">
+      </th>
+      <td>{{i +1 }}</td>
+      <td>{{product.name}}</td>
+      <td>
+          <img style="width: 100px" [src]="product.image" alt="">
+      </td>
+      <td>{{product.price | currency: "VND" | lowercase}}</td>
+      <td>{{product.priceSale  | currency: "VND" | lowercase}}</td>
+      <td>{{product.created  | date:'dd/MM/YYYY'}}</td>
+      <td>
+          <button class="btn_update" >
+              <a routerLink="/admin/san-pham/edit/{{product.id}}">Cập nhật</a>
+          </button>
+          <button  class="btn_dele" (click)="OnDelete(product.id)">Xóa</button>
+      </td>
+  
+    </tr>
+ 
+  </table>
+  <app-pagination></app-pagination>
+</div>
+</div>
+</div>

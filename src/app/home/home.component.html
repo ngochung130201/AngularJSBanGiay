@@ -1,0 +1,28 @@
+<app-header>
+</app-header>
+<app-slide [autoSilde] ="true" ></app-slide>
+<!-- <app-slide></app-slide> -->
+
+<app-category></app-category>
+<div class="products">
+    <div class="">Sản phẩm  </div>
+<div class="product" >
+    <a routerLink="/san-pham/{{product.id}}" class="product__item" *ngFor="let product of productListAll" >
+     
+            <img [src]="product.image" alt="">
+            <span>{{product.name}}</span>
+            <span>
+                {{product.price}}
+
+            </span>
+            <span>{{product.priceSale}}</span>
+        
+    </a>
+
+
+</div>
+<div class="center">
+    <a routerLink="/san-pham">Xem Thêm</a>
+</div>
+
+<app-footer></app-footer>

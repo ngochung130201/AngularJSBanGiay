@@ -1,0 +1,25 @@
+.flex_center {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        li {
+            a {
+                border-radius: 3px;
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+                color: #fff;
+                background-color: #5A6268;
+            }
+        }
+    }
+   
+}

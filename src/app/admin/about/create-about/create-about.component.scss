@@ -1,0 +1,11 @@
+.flex {
+    display: grid;
+    grid-template-columns: 1fr 6fr
+  }
+  .form {
+      margin-top: 1rem;
+      width: 80%;
+  }
+  input.ng-invalid.ng-touched{
+      border: 1px solid red;
+  }

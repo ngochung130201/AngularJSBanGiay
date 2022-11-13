@@ -1,0 +1,55 @@
+<app-header></app-header>
+<div class="about " *ngFor="let about of aboutList">
+  <!-- <div class="about_item">
+    <h3>
+        GIỚI THIỆU GOSUMO
+    </h3>
+    <p>
+        Công ty Cổ Phần Thời Trang Hạ Vàng (Golden Summer Fashion Company) được thành lập vào năm 2003. Với sứ mệnh đem đến cho những tín đồ thời trang Việt Nam những sản phẩm thời trang cao cấp chính hãng, độc đáo, cập nhật cũng như bắt kịp với xu hướng và trào lưu thế giới.
+        Ngoài chất liệu và kiểu dáng chúng tôi đặc biệt chú trọng đến công nghệ của sản phẩm. Vì sự thoải mái, tiện dụng, tốt cho sức khỏe của khách hàng là mối quan tâm hàng đầu của chúng tôi.
+    </p>
+  </div>
+  <div class="about_item">
+    <h3>
+        THÔNG TIN ĐĂNG KÝ DOANH NGHIỆP
+    </h3>
+   <ul>
+    <li><b>Tên công ty:</b>  Công Ty Cổ Phần Thời Trang Hạ Vàng </li>
+    <li><b>Tên công ty:</b>  Công Ty Cổ Phần Thời Trang Hạ Vàng </li>
+    <li><b>Tên công ty:</b>  Công Ty Cổ Phần Thời Trang Hạ Vàng </li>
+    <li><b>Tên công ty:</b>  Công Ty Cổ Phần Thời Trang Hạ Vàng </li>
+    <li><b>Tên công ty:</b>  Công Ty Cổ Phần Thời Trang Hạ Vàng </li>
+   
+   </ul>
+  </div>
+  <div class="about_item">
+    <h3>
+        GIỚI THIỆU GOSUMO
+    </h3>
+    <p>
+        Công ty Cổ Phần Thời Trang Hạ Vàng (Golden Summer Fashion Company) được thành lập vào năm 2003. Với sứ mệnh đem đến cho những tín đồ thời trang Việt Nam những sản phẩm thời trang cao cấp chính hãng, độc đáo, cập nhật cũng như bắt kịp với xu hướng và trào lưu thế giới.
+        Ngoài chất liệu và kiểu dáng chúng tôi đặc biệt chú trọng đến công nghệ của sản phẩm. Vì sự thoải mái, tiện dụng, tốt cho sức khỏe của khách hàng là mối quan tâm hàng đầu của chúng tôi.
+    </p>
+  </div> -->
+  <div [innerHTML]="about.content"></div>
+  
+</div>
+<div class="flex">
+    <div class="about_ft">
+        <span>CAM KẾT CHÍNH HÃNG</span>
+        <span>Đảm Bảo Bởi Công Ty CP Thời Trang Hạ Vàng</span>
+    </div>
+    <div class="about_ft">
+        <span>CAM KẾT CHÍNH HÃNG</span>
+        <span>Đảm Bảo Bởi Công Ty CP Thời Trang Hạ Vàng</span>
+    </div>
+    <div class="about_ft">
+        <span>CAM KẾT CHÍNH HÃNG</span>
+        <span>Đảm Bảo Bởi Công Ty CP Thời Trang Hạ Vàng</span>
+    </div>
+    <div class="about_ft">
+        <span>CAM KẾT CHÍNH HÃNG</span>
+        <span>Đảm Bảo Bởi Công Ty CP Thời Trang Hạ Vàng</span>
+    </div>
+</div>
+<app-footer></app-footer>
