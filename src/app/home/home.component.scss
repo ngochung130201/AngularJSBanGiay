@@ -1,24 +1,25 @@
 @import '../../assets/scss/style.scss';
 
+
 .product {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
-    .product__item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        img {
-            width: 100%;
-        }
-        span:nth-child(3){
-            color: red;
-        }
-        span:nth-child(4){
-            text-decoration: line-through;
-        }
-    }
+  display: flex;
+  gap: 1rem;
+   .product__item {
+
+       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       text-align: center;
+       img {
+           width: 218px;
+       }
+
+       span:nth-child(3){
+         display: block;
+           color: red;
+       }
+       span:nth-child(4){
+           text-decoration: line-through;
+       }
+   }
 }
 .products {
     padding: $p0-4 $p-6;

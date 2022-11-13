@@ -7,13 +7,13 @@
                 <li *ngFor="let item of menu2">
                     <a href="#home" routerLink="{{item.link}}">{{item.name}}</a>
                 </li>
-              
-               
+
+
             </ul>
             <div class="one-list-item">
-                
-                <a href="" *ngFor="let item of menuAuth"  class="one-list-auth"> {{item.name}} </a> 
-           
+
+                <a href="" *ngFor="let item of menuAuth"  class="one-list-auth"> {{item.name}} </a>
+
             </div>
           </div>
         </div>
@@ -26,11 +26,11 @@
                 <ul>
                     <li *ngFor="let item of menuArray"><a routerLink="{{item.link}}">{{item.name}}</a></li>
                 </ul>
-              
+
             </div>
            </div>
            <div class="header-two_search">
-            <mat-icon  svgIcon="search"></mat-icon>
+           <input type="text" placeholder="Nhập tên sản phẩm">
             <mat-icon  svgIcon="search"></mat-icon>
            </div>
         </div>

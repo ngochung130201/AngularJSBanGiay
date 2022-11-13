@@ -17,4 +17,7 @@ export class BlogService {
   delete(id:any):Observable<any>{
     return this.http.delete('https://localhost:7084/api/Blogs/'+id)
   }
+  create(data:any):Observable<any>{
+    return this.http.post('https://localhost:7084/api/Blogs/',data);
+  }
 }
