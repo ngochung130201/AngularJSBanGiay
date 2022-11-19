@@ -35,48 +35,17 @@
 <div class="products">
     <div class="" style="font-size:25px ; font-weight: 700;">Sản phẩm liên quan</div>
     <div class="product">
-    <a href="" class="product__item">
 
-            <img src="https://timan.vn/Thumb.ashx?s=300&file=/UploadImages/shops/dep-nam/DK12/Avatar/dep-kep-da-nam-dk12-avatar.jpg" alt="">
-            <span>Giay Da Thể Thao</span>
-            <span>
-                320.000d
 
-            </span>
-            <span>500.000d</span>
+<a href="" *ngFor="let item of productAll" class="product__item">
 
-    </a>
-    <a href="" class="product__item">
-
-        <img src="https://timan.vn/Thumb.ashx?s=300&file=/UploadImages/shops/dep-nam/DK12/Avatar/dep-kep-da-nam-dk12-avatar.jpg" alt="">
-        <span>Giay Da Thể Thao</span>
-        <span>
-            320.000d
-
-        </span>
-        <span>500.000d</span>
-
-</a>
-<a href="" class="product__item">
-
-    <img src="https://timan.vn/Thumb.ashx?s=300&file=/UploadImages/shops/dep-nam/DK12/Avatar/dep-kep-da-nam-dk12-avatar.jpg" alt="">
-    <span>Giay Da Thể Thao</span>
+    <img [src]="item.image" alt="">
+    <span>{{item.name}}</span>
     <span>
-        320.000d
+       {{item.price}}
 
     </span>
-    <span>500.000d</span>
-
-</a>
-<a href="" class="product__item">
-
-    <img src="https://timan.vn/Thumb.ashx?s=300&file=/UploadImages/shops/dep-nam/DK12/Avatar/dep-kep-da-nam-dk12-avatar.jpg" alt="">
-    <span>Giay Da Thể Thao</span>
-    <span>
-        320.000d
-
-    </span>
-    <span>500.000d</span>
+    <span>{{item.priceSale}}</span>
 
 </a>
 

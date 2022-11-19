@@ -43,6 +43,7 @@ import { RegisterComponent } from './register/register.component';
 import { LoginService } from './services/login.service';
 import {AuthGuard} from './auth.guard'
 import { CartComponent } from './cart/cart.component';
+import { ArcontactusComponent } from './arcontactus/arcontactus.component';
 
 
 @NgModule({
@@ -76,7 +77,8 @@ import { CartComponent } from './cart/cart.component';
     IndexblogComponent,
     LoginComponent,
     RegisterComponent,
-    CartComponent
+    CartComponent,
+    ArcontactusComponent
 
 
 

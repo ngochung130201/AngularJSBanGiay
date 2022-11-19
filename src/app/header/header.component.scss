@@ -60,3 +60,44 @@ header {
 .bx-cart {
   font-size: 24px;
 }
+.btn-logout {
+  border: none;
+  margin-left: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #1435C3;
+  color: #fff;
+
+}
+.link_hover {
+  /* you can change these variables to control the border */
+  --border-color: #1435C3;
+  --border-width: 3px;
+  --bottom-distance: 0px; /* you can increase this */
+
+  color: #000;
+  display: inline-block;
+  text-transform: inherit;
+  background-image: linear-gradient(var(--border-color), var(--border-color));
+  background-size: 0% var(--border-width);
+  background-repeat: no-repeat;
+  transition: background-size 0.3s;
+  margin: 5px 0;
+}
+
+.fromCenter {
+  background-position: 50% calc(100% - var(--bottom-distance));
+}
+
+.fromRight {
+  background-position: 100% calc(100% - var(--bottom-distance));
+}
+
+.fromLeft {
+  background-position: 0 calc(100% - var(--bottom-distance))
+}
+
+.link_hover:hover {
+  background-size: 100% var(--border-width);
+  cursor: pointer;
+}

@@ -1,1 +1,19 @@
 @import '../assets/scss/style.scss';
+p {
+  font-family: Lato;
+}
+html {
+  scroll-behavior: smooth;
+}
+button {
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 50%;
+  color: #ffff;
+  outline: none;
+  border: none;
+  background-color: #1435C3;
+}

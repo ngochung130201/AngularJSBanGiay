@@ -47,7 +47,7 @@ const routes: Routes = [
   {path:'dang-nhap', component:LoginComponent},
   {path:'dang-ky', component:RegisterComponent},
   {path:'admin/danh-muc/create', component:AddCategoryComponent,canActivate:[AuthGuard]},
-  {path:'admin/danh-muc/edit', component:EditCategoryComponent,canActivate:[AuthGuard]},
+  {path:'admin/danh-muc/edit/:id', component:EditCategoryComponent,canActivate:[AuthGuard]},
 
 ];
 

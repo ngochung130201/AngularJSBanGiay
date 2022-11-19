@@ -20,6 +20,7 @@ export class ProductDetailComponent implements OnInit {
   ) {
 
   }
+  productAll : Array<any> = []
   amount:number = 1
   cartData: Array<Carts> = [];
   cartData2: Array<Carts> = [];
@@ -30,6 +31,10 @@ export class ProductDetailComponent implements OnInit {
         this.productDetail = res;
       });
     }
+    this.productOne.getListALL().subscribe(data=>{
+      this.productAll =data.slice(7)
+
+    })
   }
   ConvertCartData() {
     this.productDetail.map((item) => {
@@ -52,7 +57,7 @@ export class ProductDetailComponent implements OnInit {
 
     this.cart.AddCart(data).subscribe({
       next:(res=>{
-        console.log(res);
+
         this.routerUrl.navigate(['/gio-hang'],{state:{data : {res}}});
       }),
       error:(err=>{

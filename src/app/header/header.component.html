@@ -24,16 +24,31 @@
            </div>
             <div class="two_menu-list flex-item_center">
                 <ul>
-                    <li *ngFor="let item of menuArray"><a routerLink="{{item.link}}">{{item.name}}</a></li>
+                    <li class="link_hover fromCenter" *ngFor="let item of menuArray"><a  routerLink="{{item.link}}">{{item.name}}
+
+
+                    </a>
+
+                    </li>
+
 
                 </ul>
+
                 <div class="">
                   <a routerLink="/gio-hang">
                     <i class='bx bx-cart'></i>
                    </a>
-                   <button (click)="Logout()">Đăng xuất</button>
-                </div>
 
+                </div>
+                <div class="" *ngIf="isLogout then Nologout else YesLogout"></div>
+                <ng-template #Nologout>
+                  <button  class="btn-logout" (click)="Logout()">
+                    <i class='bx bx-log-out'></i>
+                  </button>
+                </ng-template>
+                <ng-template #YesLogout>
+                <span></span>
+                </ng-template>
 
 
 
