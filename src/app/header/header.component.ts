@@ -27,7 +27,7 @@ export class HeaderComponent implements OnInit {
       link:'/trang-chu',
     },
     {
-      name :'Trở thành Người bán Shopee',
+      name :'Trở thành Người bán HNH',
       link:'/gioi-thieu',
     },
     {
@@ -40,14 +40,25 @@ export class HeaderComponent implements OnInit {
     },
 
   ]
+  isLogout : boolean = false
+ public CovertToken(){
+    let tokenUser =  localStorage.getItem('tokenUser');
+    if(typeof tokenUser =='string' ){
+     let convertDataToken = JSON.parse(tokenUser);
+     let userName = convertDataToken.userName;
+      this.isLogout =true
+      return userName;
+    }
+  }
   menuAuth = [
     {
-      name :'Đăng nhập',
+
+      name :`${this.CovertToken() == null ? 'Đăng nhập' : `Tài khoản : ${this.CovertToken()}` }`  ,
       link:'/dang-nhap',
     },
     {
-      name :'Đăng ký',
-      link:'/dang-ky',
+      name :`${this.CovertToken()== null ? 'Đăng kí' : ''}`,
+      link:`${this.CovertToken()== null ? '/dang-ky'  : ''}`,
     },
 
   ]
@@ -62,6 +73,8 @@ export class HeaderComponent implements OnInit {
    }
 
       )
+
+   this.CovertToken();
   }
 
   Logout(){
