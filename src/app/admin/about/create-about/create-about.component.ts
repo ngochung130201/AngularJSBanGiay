@@ -18,12 +18,12 @@ export class CreateAboutComponent implements OnInit {
   ngOnInit(): void {
   }
   AboutFormCreate : FormGroup = new FormGroup({
-   
- 
+
+
     name: new FormControl(
       '',Validators.required
     ) ,
-   
+
     content:new FormControl(
       '',Validators.required
     ) ,
@@ -33,11 +33,11 @@ export class CreateAboutComponent implements OnInit {
     facebook:new FormControl(
       '',Validators.required
     ) ,
-   
+
     intagram:new FormControl(
       '',Validators.required
     ) ,
-       
+
     github:new FormControl(
       '',Validators.required
     ) ,

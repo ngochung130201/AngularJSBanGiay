@@ -1,8 +1,18 @@
 @import '../../assets/scss/style.scss';
 .category {
     padding: $p0-4 $p-6;
+    margin-top: 2rem;
     h3 {
         font-size: 18px;
+        border:1px solid #1435C3 ;
+        margin-bottom: 0.2rem;
+        padding: 0.5rem;
+        display: inline;
+        margin-top: 0.2rem;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        color: #1435C3;
+
     }
     .category__body {
         background-color: #F5F0F2;
@@ -12,7 +22,7 @@
         align-items: center;
         justify-content: center;
         gap: 1rem;
-      
+
         .category_item {
             display: flex;
             flex-direction: column;
@@ -33,14 +43,30 @@
                     object-fit: contain;
                     border-radius: 50%;
                 }
-             
+
                 span {
                     text-align: center;
                   font-weight: 400;
                 }
             }
-       
+
         }
     }
 
+}
+.home_title {
+
+  color: #1435C3;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  span {
+   border:1px solid #1435C3 ;
+    margin-bottom: 0.2rem;
+    padding: 0.5rem;
+    display: inline;
+    margin-top: 0.2rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
 }

@@ -5,10 +5,11 @@
 
 <app-category></app-category>
 <div class="products">
-    <div class="">Sản phẩm  </div>
+    <div class="home_title">
+      <span>Sản phẩm</span>  </div>
 <div class="product" >
     <a routerLink="/san-pham/{{product.id}}" class="product__item" *ngFor="let product of productListAll" >
-     
+
             <img [src]="product.image" alt="">
             <span>{{product.name}}</span>
             <span>
@@ -16,7 +17,7 @@
 
             </span>
             <span>{{product.priceSale}}</span>
-        
+
     </a>
 
 

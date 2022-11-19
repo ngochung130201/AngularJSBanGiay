@@ -2,22 +2,63 @@
 </app-header>
 <div class="products">
     <div class="">Sản phẩm  </div>
+    <div class="search">
+      <form action="" (ngSubmit)="OnSearch()" [formGroup]="FormSearch">
+        <input formControlName="search" type="search" name="" id="">
+      </form>
+    </div>
+<div class="">
+  <form [formGroup]="Sort">
+
+    <div class="form-group">
+        <label for="gender">Sắp xếp</label>
+        <div>
+          <input id="price_asc" type="radio" value="price_asc" name="price" formControlName="price" (change)="changeGender($event)">
+          <label for="price_asc">Tăng dần</label>
+       </div>
+
+       <div>
+          <input id="price_desc" type="radio" value="price_desc" name="price" formControlName="price" (change)="changeGender($event)">
+          <label for="price_desc">Giảm dần</label>
+       </div>
+
+
+
+
+
+</div>
 <div class="product" >
+
     <a routerLink="/san-pham/{{product.id}}" class="product__item" *ngFor="let product of products" >
-     
+
         <img [src]="product.image" alt="">
         <span>{{product.name}}</span>
         <span>
-            {{product.price}}
+            {{product.price}} đ
 
         </span>
-        <span>{{product.priceSale}}</span>
-    
+        <span>{{product.priceSale}} đ</span>
+
 </a>
- 
+
 
 </div>
-<div class="center">
-    <a href="">Xem Thêm</a>
+
+<div class="center_2">
+  <nav aria-label="...">
+    <ul class="pagination pagination-circle">
+      <li class="page-item">
+        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active" aria-current="page">
+        <a class="page-link" href="#">2 <span class="visually-hidden">(current)</span></a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
 </div>
 <app-footer></app-footer>

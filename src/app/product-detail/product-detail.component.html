@@ -7,17 +7,21 @@
         <span>
             {{item.name}}
         </span>
+        <div class="">
+          <span>Số lượng</span>
+          <input [(ngModel)]="amount"   name="amountName" id="" >
+        </div>
        <div class="">
         <span class="price_sale">
-            {{item.priceSale}}
+            {{item.priceSale}} đ
         </span>
         <span class="price">
-            {{item.price}}
+            {{item.price}} đ
         </span>
        </div>
        <div class="detail_btn">
             <div class="btn detail_cart">
-                <a (click)="OnCart()" href=""> THÊM VÀO GIỎ HÀNG</a>
+                <button (click)="OnCart()" href=""> THÊM VÀO GIỎ HÀNG</button>
             </div>
             <div class="btn detail_start">
                 <a (click)="OnCartStart()" href="">MUA NGAY</a>
@@ -32,7 +36,7 @@
     <div class="" style="font-size:25px ; font-weight: 700;">Sản phẩm liên quan</div>
     <div class="product">
     <a href="" class="product__item">
-     
+
             <img src="https://timan.vn/Thumb.ashx?s=300&file=/UploadImages/shops/dep-nam/DK12/Avatar/dep-kep-da-nam-dk12-avatar.jpg" alt="">
             <span>Giay Da Thể Thao</span>
             <span>
@@ -40,10 +44,10 @@
 
             </span>
             <span>500.000d</span>
-        
+
     </a>
     <a href="" class="product__item">
-     
+
         <img src="https://timan.vn/Thumb.ashx?s=300&file=/UploadImages/shops/dep-nam/DK12/Avatar/dep-kep-da-nam-dk12-avatar.jpg" alt="">
         <span>Giay Da Thể Thao</span>
         <span>
@@ -51,10 +55,10 @@
 
         </span>
         <span>500.000d</span>
-    
+
 </a>
 <a href="" class="product__item">
-     
+
     <img src="https://timan.vn/Thumb.ashx?s=300&file=/UploadImages/shops/dep-nam/DK12/Avatar/dep-kep-da-nam-dk12-avatar.jpg" alt="">
     <span>Giay Da Thể Thao</span>
     <span>
@@ -65,7 +69,7 @@
 
 </a>
 <a href="" class="product__item">
-     
+
     <img src="https://timan.vn/Thumb.ashx?s=300&file=/UploadImages/shops/dep-nam/DK12/Avatar/dep-kep-da-nam-dk12-avatar.jpg" alt="">
     <span>Giay Da Thể Thao</span>
     <span>

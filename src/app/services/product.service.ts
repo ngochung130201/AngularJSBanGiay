@@ -7,8 +7,16 @@ import { Observable } from 'rxjs';
 export class ProductService {
 
   constructor(private http:HttpClient) { }
-  getListALL():Observable<any>{
-    return this.http.get<any>('https://localhost:7084/api/Products')
+  getListALL(search:any = null,sort:any=1,page:any =null):Observable<any>{
+    let url = `https://localhost:7084/api/Products?sort=`+sort;
+    if(search !=null){
+      url+= '&search='+search
+    }
+    if(page!=null){
+      url+= '&page='+page
+    }
+
+    return this.http.get<any>(url)
   }
   getOne(id:any):Observable<any>{
     return this.http.get<any>(`https://localhost:7084/api/Products/${id}`)
@@ -27,5 +35,5 @@ export class ProductService {
   updateMenus(id:any,data:any):Observable<any>{
     return  this.http.put<any>(`https://localhost:7084/api/Menus/`+id,data);
   }
-    
+
 }

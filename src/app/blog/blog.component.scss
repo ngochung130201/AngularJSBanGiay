@@ -1,11 +1,11 @@
 .blog {
     display: block;
-   margin-top: 5rem;
-    
-    
+   margin-top: 7rem;
+
+
 }
 .blog .blog__header {
-  
+
     background-size: cover;
     background-position: center;
 
@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+
 
 }
 .blog .blog__header h3 {
@@ -42,7 +42,7 @@
     letter-spacing: 0.5px;
     line-height: 22px;
     text-align: center;
-    
+
 }
 .blog__container {
     margin-top: 1rem;
@@ -50,7 +50,7 @@
     grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) );
     gap: 10px;
     width: 100%;
-    
+
 }
 .blog__container .blog__list {
     width: 390px;
@@ -69,8 +69,8 @@
     justify-content: center;
     width: 394px;
     gap: 1rem;
-  
-  
+
+
 }
 .blog__item span {
     font-weight: 500;

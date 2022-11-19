@@ -13,7 +13,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { AddProductComponent } from './admin/add-product/add-product.component';
 import { ProductComponent } from './product/product.component';
-import { BlogComponent } from './blog/blog.component'; 
+import { BlogComponent } from './blog/blog.component';
 import {AppRoutingModule} from './app-routing.module'
 
 import { ProductDetailComponent } from './product-detail/product-detail.component';
@@ -21,7 +21,7 @@ import { EditProductComponent } from './admin/edit-product/edit-product.componen
 import { IndexProductComponent } from './admin/index-product/index-product.component';
 import { AddCategoryComponent } from './admin/Category/add-category/add-category.component';
 import { EditCategoryComponent } from './admin/Category/edit-category/edit-category.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderAdminComponent } from './admin/header-admin/header-admin.component';
 import { AddAboutComponent } from './admin/add-about/add-about.component';
 import { IndexAboutComponent } from './admin/index-about/index-about.component';
@@ -38,7 +38,11 @@ import { AddBlogComponent } from './admin/blog/add-blog/add-blog.component';
 import { EditBlogComponent } from './admin/blog/edit-blog/edit-blog.component';
 import { IndexCategoryComponent } from './admin/Category/index-category/index-category.component';
 import { IndexblogComponent } from './admin/blog/indexblog/indexblog.component';
-
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginService } from './services/login.service';
+import {AuthGuard} from './auth.guard'
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -69,11 +73,15 @@ import { IndexblogComponent } from './admin/blog/indexblog/indexblog.component';
     AddBlogComponent,
     EditBlogComponent,
     IndexCategoryComponent,
-    IndexblogComponent
+    IndexblogComponent,
+    LoginComponent,
+    RegisterComponent,
+    CartComponent
 
 
-  
-    
+
+
+
   ],
   imports: [
     BrowserModule,
@@ -86,11 +94,13 @@ import { IndexblogComponent } from './admin/blog/indexblog/indexblog.component';
     MatFormFieldModule,
     MatInputModule,
     NgImageSliderModule,
-    EditorModule
+    EditorModule,
+    FormsModule,
 
-    
+
+
   ],
-  providers: [],
+  providers: [LoginService,AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

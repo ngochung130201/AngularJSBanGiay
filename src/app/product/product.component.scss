@@ -1,10 +1,14 @@
 @import '../../assets/scss/style.scss';
-
+.search {
+  margin-top: 5rem;
+}
 .product {
-   display: flex;
-   gap: 1rem;
-   margin-top: 5rem;
-   flex-wrap: wrap;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns:
+    repeat( 7, 1fr );
+  max-width:100%;
+  margin-top: 3rem;
     .product__item {
 
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -33,15 +37,35 @@
     margin-top: 1rem;
    a {
     padding: 1rem 3rem;
-    background: #fecd08;
-    color: #000;
+    background: #1435C3;
+    color: #fff;
     border-radius: 2px;
     border: 1px solid transparent;
    }
    :hover {
     background: #fff;
-    color: #fecd08;
-    border: 1px solid #fecd08;
+    color: #1435C3;
+    border: 1px solid #1435C3;
     transition: all ease 0.3s;
 }
+}
+.center_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+  a {
+    padding: 0.5rem 1rem;
+    background: #1435C3;
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    border: 1px solid #000;
+   }
+   :hover {
+    background: #fff;
+    color: #1435C3;
+
+   }
 }

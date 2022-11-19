@@ -19,7 +19,7 @@ export class AddProductComponent implements OnInit {
       '',Validators.required
     ) ,
     description :new FormControl(
-      
+
     ) ,
     content:new FormControl(
       '',Validators.required
@@ -34,13 +34,13 @@ export class AddProductComponent implements OnInit {
     priceSale:new FormControl(
       '',Validators.required
     ) ,
-   
+
   })
 
   productList : Array<any> = [];
   ngOnInit(): void {
-  
-   
+
+
   }
   OnCreate(){
    try {

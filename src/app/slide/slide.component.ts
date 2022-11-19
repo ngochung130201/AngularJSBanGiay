@@ -11,19 +11,20 @@ export class SlideComponent implements OnInit {
   @Input() autoSilde = false;
   slideInteval = 3000;
   images = [
+
     {
       url:
-        'https://timan.vn/Thumb.ashx?s=1920&file=/UploadImages/shops/banner/11-11-2022/1920X550/nam.jpg',
-      alt: 'nature1',
-    },
-    {
-      url:
-        'https://timan.vn/Thumb.ashx?s=1920&file=/UploadImages/shops/banner/11-11-2022/1920X550/nu.png',
+        'https://cdn.yousport.vn/Media/Slides/slide-web-th11.jpg?v=2',
       alt: 'nature2',
     },
-    
-  
-  ] 
+    {
+      url:
+        'https://cdn.yousport.vn/Media/Slides/slide-web.jpg?v=2',
+      alt: 'nature2',
+    },
+
+
+  ]
   selectImage(index:number):void {
     this.selectIndex = index;
   }

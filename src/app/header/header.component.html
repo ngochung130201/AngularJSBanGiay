@@ -12,7 +12,7 @@
             </ul>
             <div class="one-list-item">
 
-                <a href="" *ngFor="let item of menuAuth"  class="one-list-auth"> {{item.name}} </a>
+                <a [routerLink]="item.link" *ngFor="let item of menuAuth"   class="one-list-auth"> {{item.name}} </a>
 
             </div>
           </div>
@@ -22,18 +22,27 @@
            <div class="">
             <img src="../../assets/image/logo.svg" alt="" srcset="">
            </div>
-            <div class="two_menu-list">
+            <div class="two_menu-list flex-item_center">
                 <ul>
                     <li *ngFor="let item of menuArray"><a routerLink="{{item.link}}">{{item.name}}</a></li>
+
                 </ul>
+                <div class="">
+                  <a routerLink="/gio-hang">
+                    <i class='bx bx-cart'></i>
+                   </a>
+                   <button (click)="Logout()">Đăng xuất</button>
+                </div>
+
+
+
 
             </div>
            </div>
-           <div class="header-two_search">
-           <input type="text" placeholder="Nhập tên sản phẩm">
-            <mat-icon  svgIcon="search"></mat-icon>
+
+
            </div>
-        </div>
+
     </nav>
     <!-- end nav -->
 </header>

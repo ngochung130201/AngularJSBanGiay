@@ -1,0 +1,41 @@
+<app-header></app-header>
+<div class="login">
+  <h1 class="title_page">
+      Đăng nhập tài khoản
+  </h1>
+  <p>Bạn chưa có tài khoản ?
+      <a class="btn-register" href="">Đăng ký tại đây</a>
+  </p>
+<form action="" [formGroup]="loginForm">
+  <div class="form__login">
+    <div class="form__group">
+        <label for="email">Email
+            <span class="requied">*</span>
+        </label>
+        <input formControlName="userName" type="text" placeholder="Email" >
+    </div>
+    <div class="form__group">
+        <label for="password">Mật khẩu
+            <span class="requied">*</span>
+        </label>
+        <input formControlName="password" type="password" placeholder="Mật khẩu" >
+        <small>Quên mật khẩu? Nhấn vào <a href="">Đây</a></small>
+    </div>
+    <button class="btn__login" (click)="OnLogin()">Đăng nhập</button>
+    <p class="a__center">Hoặc đăng nhập bằng</p>
+    <div class="link_btn-login">
+        <button class="btn_login-main btn_google-login">
+            <i class='btn-login-icon bx bxl-google-plus' ></i> Đăng nhập bằng Google
+        </button>
+        <button class="btn_login-main btn_face-login">
+            <i class='btn-login-icon bx bxl-facebook' ></i>
+            Đăng nhập bằng Facebook
+        </button>
+    </div>
+</div>
+</form>
+
+
+
+</div>
+<app-footer></app-footer>

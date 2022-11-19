@@ -1,0 +1,33 @@
+@import '../../assets/scss/style.scss';
+.cart {
+  margin-top: 7rem;
+  margin-left: $p-6;
+  margin-right: $p-6;
+  background-color: #F8F8FC;
+}
+.left_cart {
+  p{
+    width: 300px;
+  }
+}
+.right_cart {
+  span {
+    margin-left: 2rem;
+  }
+}
+.pay_item {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+}
+.btn_cart {
+  width: 100%;
+  border: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #1435C3;
+  color: #fff;
+  border-radius: 10px;
+}
